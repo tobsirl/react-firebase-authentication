@@ -27,7 +27,9 @@ class SignUpForm extends Component {
 
   onSubmit = event => {};
 
-  onChange = event => {};
+  onChange = event => {
+    this.setState({ [event.target.name]: event.target.value });
+  };
 
   render() {
     return <form onSubmit={this.onSubmit} />;
