@@ -10,9 +10,19 @@ const SignUpPage = () => (
   </div>
 );
 
+const INITIAL_STATE = {
+  username: '',
+  email: '',
+  passwordOne: '',
+  passwordTwo: '',
+  error: null
+};
+
 class SignUpForm extends Component {
   constructor(props) {
     super(props);
+
+    this.state = { ...INITIAL_STATE };
   }
 
   onSubmit = event => {};
